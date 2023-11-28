@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+}
+
+.header {
+  flex: 4.5;
+  padding: 2rem;
+}
+.scroll-container {
+  flex: 5.5;
+  padding: 2rem;
+}
+.header h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  padding: 1rem;
+}
+.header p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  padding-left: 1rem;
+}
+.profile-image {
+  width: 150px;
+}
+.job-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+@media (max-width: 600px) {
+  .job-title-container {
+    flex-direction: column;
+    align-items: flex-start; /* Optional: Adjust alignment for better stacking */
+  }
+
