@@ -1,26 +1,39 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
+body {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  background-color: #e8f4ea;
+}
 main {
   display: flex;
+  padding: 2rem;
+  max-width: 1300px;
+}
+.header {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+  /* border: orange solid 5px; */
 }
 
-.header {
-  flex: 4.5;
-  padding: 2rem;
-}
-.scroll-container {
-  flex: 5.5;
-  padding: 2rem;
-}
 .header h1{
   font-family: 'Poppins', sans-serif;
-  font-size: 64px;
+  font-size: 74px;
   font-weight: 500;
   padding: 1rem;
 }
@@ -29,19 +42,97 @@ main {
   font-weight: 400;
   font-size: 40px;
   padding-left: 1rem;
+
+}
+.header-card {
+  /* border: rgb(4, 236, 4) solid 2px; */
+  max-width: 400px;
 }
 .profile-image {
-  width: 150px;
+  width: 170px;
+  padding-bottom: 20px;
 }
 .job-title-container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 30px;
+  /* border: black solid 2px; */
+}
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  /* border: black solid 2px; */
+}
+.intro-text {
+  margin: 30px;
+}
+.project-list {
+  width: 100%;
+  /* border: blue solid 2px; */
+}
+.project-card {
+  margin: 30px 30px;
+  display: flex;
+  flex-direction: column;
 
 }
-@media (max-width: 600px) {
+.project-image {
+  max-width: 500px;
+  border-radius: 8px;
+  align-self: center;
+  margin-top: 30px;
+  
+}
+.project-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-card-top-line{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.bottom-row {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-row p{
+  position: absolute;
+  left:0;
+  font-weight: 500;
+}
+.tech-stack-container {
+  display: flex;
+  gap: 20px;
+}
+.tech-logo {
+  height: 50px;
+}
+
+
+@media (max-width: 1200px) {
   .job-title-container {
     flex-direction: column;
-    align-items: flex-start; /* Optional: Adjust alignment for better stacking */
+    align-items: flex-start;
+    padding: 20px;
+  }
+}
+
+/* @media (max-width: 1040px) { needs to be header at the top up to here
+  .job-title-container {
+    flex-direction: column;
+    align-items: flex-end; 
   }
 
+} */

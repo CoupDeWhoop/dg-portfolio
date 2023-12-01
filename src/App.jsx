@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Header from '../components/Header'
-import ScrollSection from '../components/ScrollSection'
+import Header from './components/Header'
+import ScrollSection from './components/ScrollSection'
 import './App.css'
 
 function App() {
