@@ -1,66 +1,56 @@
+import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import TechStack from "./TechStack";
 
 const projectsData = [
-    {
-      title: 'Trippy',
-      description: 'A description of Trippy. Overlapping user interfaces. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia, quos, praesentium, esse numquam sapiente corrupti facere ipsam laborum accusamus delectus voluptas blanditiis fugit totam sint exercitationem tempore quas ducimus. ' ,
-      image: 'src/assets/project-images/Trippy screens.png',
-      techStack: ['react-native', 'typescript', 'firebase', 'expo']
-    },
-    {
-      title: 'NC News',
-      description: 'Restful API etc Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aut magni obcaecati nesciunt iusto recusandae, iste quo consequatur a tempora animi reprehenderit perferendis nihil aliquam magnam minima? Minus, a sunt?',
-      image: 'src/assets/project-images/NC news.png',
-      techStack: ['react', 'javascript', 'axios', 'css']
-    },
-  ];
+  {
+    title: 'Trippy',
+    description: 'A description of Trippy. Overlapping user interfaces. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia, quos, praesentium, esse numquam sapiente corrupti facere ipsam laborum accusamus delectus voluptas blanditiis fugit totam sint exercitationem tempore quas ducimus. ' ,
+    image: 'src/assets/project-images/Trippy screens.png',
+    github: 'https://github.com/Proc31/trippy',
+    hostedSite: '',
+    techStack: ['react-native', 'typescript', 'firebase', 'expo', 'paper']
+  },
+  {
+    title: 'NC News',
+    description: 'Fromt end we applicaiton built in react. etc Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aut magni obcaecati nesciunt iusto recusandae, iste quo consequatur a tempora animi reprehenderit perferendis nihil aliquam magnam minima? Minus, a sunt?',
+    image: 'src/assets/project-images/NC news.png',
+    github: 'https://github.com/CoupDeWhoop/fe-nc-news',
+    hostedSite: '',
+    techStack: ['react', 'javascript', 'axios', 'css']
+  },
+  {
+    title: 'NC News API',
+    description: 'This is the restful API. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe accusamus dolorem tempora, doloremque odio provident ut? Similique quo fuga itaque? Alias necessitatibus illo suscipit, provident hic blanditiis magnam harum ipsum.',
+    image: '',
+    github: 'https://github.com/CoupDeWhoop/be-nc-news',
+    hostedSite: 'https://nc-news-api-zlkx.onrender.com/api/',
+    techStack: ['node', 'javascript', 'express', 'postgresql']
+  }
+];
 
-  const techStackLogos = {
-    'react-native': { src: 'src/assets/logos/react-native-white.png', alt: 'React Native' },
-    'typescript': { src: 'src/assets/logos/ts.svg', alt: 'TypeScript' },
-    'firebase': { src: 'src/assets/logos/firebase-1.svg', alt: 'Firebase Realtime Database' },
-    'expo': { src: 'src/assets/logos/expo-1.svg', alt: 'Expo' },
-    'react': { src: 'src/assets/logos/react-1.svg', alt: 'React' },
-    'javascript': { src: 'src/assets/logos/logo-javascript.svg', alt: 'JavaScript' },
-    'axios': { src: 'src/assets/logos/Axios.svg', alt: 'Axios' },
-    'css': { src: 'src/assets/logos/css-3.svg', alt: 'CSS' },
-  };
-  
-
-export default function projects() {
-    return (
-      <section className="project-list">
-        {projectsData.map((project) => (
-            <div className="project-card">
-                <div className="project-card-top-line">
-                  <h4>{project.title}</h4>
-                  <div className="project-icons">
-                    <FaGithub size={28} />
-                    <p style={{ fontSize: '28px' }}>🌏</p> {/* need to sort pointer*/}
-                    {/* <FaExternalLinkAlt size={28}/> */}
-                  </div>
-                </div>
-                <p>{project.description}</p>
-                <img className="project-image" src={project.image}/>
-                <div className="bottom-row">
-                  <p>Tech stack</p>
-                  <div className="tech-stack-container">
-                      {project.techStack.map((tech) => (
-                        <div className="tech-img">
-                          <img
-                          key={tech}
-                          src={techStackLogos[tech].src}
-                          alt={`${techStackLogos[tech].alt} logo`}
-                          title={techStackLogos[tech].alt}
-                          className="tech-logo"
-                          />
-                        </div>
-                        ))}
-                  </div>  
-                </div>
+const Projects = () => {
+  return (
+    <section className="project-list">
+      {projectsData.map((project) => (
+        <div className="project-card" key={project.title}>
+          <div className="project-card-top-line">
+            <h4>{project.title}</h4>
+            <div className="project-icons">
+              <FaGithub size={28} />
+              <p style={{ fontSize: '28px' }}>🌏</p>
             </div>
-         ))}
-      </section>
-    )
-}
+          </div>
+          <p>{project.description}</p>
+          <img className="project-image" src={project.image} alt={project.title} />
+          <div className="bottom-row">
+            <p>Tech stack</p>
+            <TechStack techStack={project.techStack} />
+          </div>
+        </div>
+      ))}
+    </section>
+  );
+};
+
+export default Projects;

@@ -78,6 +78,7 @@ main {
   margin: 30px 30px;
   display: flex;
   flex-direction: column;
+  /* border: blue solid 2px; */
 
 }
 .project-image {
@@ -115,9 +116,37 @@ main {
 .tech-stack-container {
   display: flex;
   gap: 20px;
+  /* border:solid red 5px; */
 }
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
 .tech-logo {
   height: 50px;
+  max-width: 80px;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+.tech-title {
+  position: absolute;
+  bottom: -50px;
+  right: 50px;
+  /* align-self: center; */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  animation: fadeIn ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.tech-logo:hover {
+  transform: scale(1.4); 
 }
 
 
@@ -128,6 +157,15 @@ main {
     padding: 20px;
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /* @media (max-width: 1040px) { needs to be header at the top up to here
   .job-title-container {
