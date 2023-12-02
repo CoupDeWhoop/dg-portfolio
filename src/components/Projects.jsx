@@ -45,7 +45,7 @@ const Projects = () => {
           <img className="project-image" src={project.image} alt={project.title} />
           <div className="bottom-row">
             <p>Tech stack</p>
-            <TechStack techStack={project.techStack} />
+            <TechStack techStack={project.techStack}/>
           </div>
         </div>
       ))}

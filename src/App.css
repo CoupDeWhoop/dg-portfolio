@@ -75,10 +75,11 @@ main {
   /* border: blue solid 2px; */
 }
 .project-card {
+  position: relative;
   margin: 30px 30px;
   display: flex;
   flex-direction: column;
-  /* border: blue solid 2px; */
+  border: blue solid 2px;
 
 }
 .project-image {
@@ -101,7 +102,6 @@ main {
   padding: 0.5rem 0 0.5rem 0;
 }
 .bottom-row {
-  position: relative;
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -109,21 +109,22 @@ main {
 }
 
 .bottom-row p{
-  position: absolute;
+  /* position: absolute; */
   left:0;
   font-weight: 500;
 }
 .tech-stack-container {
+  /* position: relative;   */
   display: flex;
   gap: 20px;
-  /* border:solid red 5px; */
+  border:solid red 5px;
 }
 
-.logo-container {
+.tech-logo-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  border:solid blue 5px;
 }
 
 .tech-logo {
@@ -134,9 +135,8 @@ main {
 }
 .tech-title {
   position: absolute;
-  bottom: -50px;
-  right: 50px;
-  /* align-self: center; */
+  top: 0px;
+  left: 100px;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 5px;
@@ -146,7 +146,7 @@ main {
 }
 
 .tech-logo:hover {
-  transform: scale(1.4); 
+  transform: scale(1.3); 
 }
 
 
