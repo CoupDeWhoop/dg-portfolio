@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { FaGithub } from "react-icons/fa";
 import TechStack from "./TechStack";
 
@@ -45,6 +45,14 @@ const pickColour = (index) => {
 }
 
 const Projects = () => {
+  const [cardFlipped, setCardFlipped] = useState(Array(projectsData.length).fill(false));
+
+  function handleClick(index) {
+    const newCardState = [...cardFlipped];
+    newCardState[index] = !newCardState[index]
+    setCardFlipped(newCardState)
+  }
+
   return (
     <section className="project-list">
       {projectsData.map((project, index) => (
@@ -65,8 +73,9 @@ const Projects = () => {
                 </div>
             </div>
           </div>
-          <div className="flip-card-container">
-            <div className="flip-card">
+          <div className="flip-card-container"
+            onClick={() => handleClick(index)}>
+            <div className={'flip-card' + (cardFlipped[index]? ' flipped': '')}>
               <div className="flip-card-front" style={{backgroundColor: pickColour(index)}}>
                 <img className="project-image" src={project.image} alt={project.title} />
               </div>

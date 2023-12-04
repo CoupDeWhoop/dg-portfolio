@@ -19,19 +19,6 @@ const techStackLogos = {
   };
 
 const TechStack = ({ techStack }) => {
-    const [anchorEl, setAnchorEl] = useState(Array(techStack.length).fill(null));
-    const handlePopoverOpen = async (event, index) => {
-        const newAnchorEl = [...anchorEl];
-        newAnchorEl[index] = event.currentTarget;
-        setAnchorEl(newAnchorEl);
-      };
-      
-  
-      const handlePopoverClose = (index) => {
-        const newAnchorEl = [...anchorEl];
-        newAnchorEl[index] = null;
-        setAnchorEl(newAnchorEl);
-      };
   
 
     return (
