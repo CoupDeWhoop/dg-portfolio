@@ -6,7 +6,7 @@ const projectsData = [
   {
     title: 'Trippy',
     description: 'A description of Trippy. Overlapping user interfaces. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia, quos, praesentium, esse numquam sapiente corrupti facere ipsam laborum accusamus delectus voluptas blanditiis fugit totam sint exercitationem tempore quas ducimus. ' ,
-    image: 'src/assets/project-images/Trippy screens.png',
+    image: 'src/assets/project-images/Trippy screens transparent.png',
     github: 'https://github.com/Proc31/trippy',
     hostedSite: '',
     techStack: ['react-native', 'typescript', 'firebase', 'expo', 'paper']
@@ -14,7 +14,7 @@ const projectsData = [
   {
     title: 'NC News',
     description: 'Fromt end we applicaiton built in react. etc Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aut magni obcaecati nesciunt iusto recusandae, iste quo consequatur a tempora animi reprehenderit perferendis nihil aliquam magnam minima? Minus, a sunt?',
-    image: 'src/assets/project-images/NC news.png',
+    image: 'src/assets/project-images/nc-news.png',
     github: 'https://github.com/CoupDeWhoop/fe-nc-news',
     hostedSite: '',
     techStack: ['react', 'javascript', 'axios', 'css']
@@ -34,21 +34,36 @@ const projectsData = [
     techStack: ['javascript', 'html', 'css' ]
   }
 ];
+const colourPalette = ['#b8e0d4','#809bce', '#eac4d5', '#d6eadf',  '#95b8d1' ]
+
+const pickColour = (index) => {
+  return colourPalette[index % colourPalette.length]
+}
 
 const Projects = () => {
   return (
     <section className="project-list">
-      {projectsData.map((project) => (
+      {projectsData.map((project, index) => (
         <div className="project-card" key={project.title}>
           <div className="project-card-top-line">
-            <h4>{project.title}</h4>
+            <div className="project-title">
+              <h4>{project.title}</h4>
+            </div>
             <div className="project-icons">
               <FaGithub size={28} />
               <p style={{ fontSize: '28px' }}>🌏</p>
             </div>
           </div>
-          <p>{project.description}</p>
-          <img className="project-image" src={project.image} alt={project.title} />
+          <div className="flip-card-container">
+            <div className="flip-card">
+              <div className="flip-card-front" style={{backgroundColor: pickColour(index)}}>
+                <img className="project-image" src={project.image} alt={project.title} />
+              </div>
+              <div className="flip-card-back">
+                <p>{project.description}</p>
+              </div>
+            </div>
+          </div>
           <div className="bottom-row">
             <p>Tech stack</p>
             <TechStack techStack={project.techStack}/>
