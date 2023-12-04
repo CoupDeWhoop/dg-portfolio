@@ -3,6 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: black;
+  line-height: 0; /* solved layout issue */
+}
+a:visited {
+  color: black;
+}
+
 html {
   font-size: 18px;
 }
@@ -12,7 +21,7 @@ body {
   width: 100%;
   justify-content: center;
   /* background-color: #e8f4ea; */
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 main {
   display: flex;
@@ -29,7 +38,6 @@ main {
   justify-content: center;
   align-items: center;
   padding-right: 2rem;
-  /* border: orange solid 5px; */
 }
 
 .header h1{
@@ -46,7 +54,6 @@ main {
 
 }
 .header-card {
-  /* border: rgb(4, 236, 4) solid 2px; */
   max-width: 400px;
 }
 .profile-image {
@@ -57,8 +64,6 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 30px;
-  /* border: black solid 2px; */
 }
 .scroll-container {
   display: flex;
@@ -66,7 +71,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 60%;
-  /* border: black solid 2px; */
+
 }
 .intro-text {
   margin: 30px;
@@ -76,11 +81,12 @@ main {
 }
 .project-card {
   margin: 30px 30px;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  background-color: #fefefe;
 }
 
 .project-card-top-line{
@@ -140,13 +146,9 @@ main {
 }
 .project-image {
   height: 90%;
-
-
   border-radius: 0.5rem;
-  /* align-self: center;
-  margin-top: 30px; */
 }
-.bottom-row p{
+.tech-list-label {
   font-weight: 500;
   margin-right: 20px;
 }
@@ -157,31 +159,33 @@ main {
 }
 
 .tech-logo-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.tech-logo {
+.tech-logo img{
   height: 50px;
   max-width: 80px;
   border-radius: 4px;
-  transition: transform 0.3s ease-in-out;
 }
-/* .tech-title {
+
+.tech-title {
   position: absolute;
-  top: 103%;
-  left: 300px;
+  opacity: 0;
+  top: 100%;
+  white-space: nowrap;
+  overflow: visible;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   border-radius: 5px;
   padding: 5px;
-  animation: fadeIn ease 0.7s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-} */
-
-
+  transition: opacity 0.4s ease-in-out;
+}
+.tech-logo-container:hover .tech-title {
+  opacity: 1;
+}
 @media (max-width: 1200px) {
   .job-title-container {
     flex-direction: column;
@@ -189,14 +193,14 @@ main {
     padding: 20px;
   }
 }
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
-}
+} */
 
 
 /* @media (max-width: 1040px) { needs to be header at the top up to here

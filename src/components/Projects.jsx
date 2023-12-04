@@ -7,23 +7,25 @@ const projectsData = [
     title: 'Trippy',
     description: 'A description of Trippy. Overlapping user interfaces. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia, quos, praesentium, esse numquam sapiente corrupti facere ipsam laborum accusamus delectus voluptas blanditiis fugit totam sint exercitationem tempore quas ducimus. ' ,
     image: 'src/assets/project-images/Trippy screens transparent.png',
-    github: 'https://github.com/Proc31/trippy',
+    gitHub: 'https://github.com/Proc31/trippy',
     hostedSite: '',
+    hostedAltText: 'This app was made for ios or android, please visit the GitHub page for more details',
     techStack: ['react-native', 'typescript', 'firebase', 'expo', 'paper']
   },
   {
     title: 'NC News',
     description: 'Fromt end we applicaiton built in react. etc Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aut magni obcaecati nesciunt iusto recusandae, iste quo consequatur a tempora animi reprehenderit perferendis nihil aliquam magnam minima? Minus, a sunt?',
     image: 'src/assets/project-images/nc-news.png',
-    github: 'https://github.com/CoupDeWhoop/fe-nc-news',
+    gitHub: 'https://github.com/CoupDeWhoop/fe-nc-news',
     hostedSite: '',
+    hostedAltText: 'under construction 👷🏼‍♂️',
     techStack: ['react', 'javascript', 'axios', 'css']
   },
   {
     title: 'NC News API',
     description: 'This is the restful API. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe accusamus dolorem tempora, doloremque odio provident ut? Similique quo fuga itaque? Alias necessitatibus illo suscipit, provident hic blanditiis magnam harum ipsum.',
     image: 'src/assets/project-images/nc-news-api.png',
-    github: 'https://github.com/CoupDeWhoop/be-nc-news',
+    gitHub: 'https://github.com/CoupDeWhoop/be-nc-news',
     hostedSite: 'https://nc-news-api-zlkx.onrender.com/api/',
     techStack: ['node', 'javascript', 'express', 'postgresql']
   },
@@ -31,6 +33,8 @@ const projectsData = [
     title: 'Card Matching Memory Game',
     description: 'retro football cards matching game. used domLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores eos dolorem error! Dolorem veniam, architecto voluptatum recusandae ullam distinctio veritatis aut repudiandae explicabo, quae earum praesentium unde adipisci optio.',
     image: 'src/assets/project-images/card-matcher.png',
+    gitHub: 'https://github.com/CoupDeWhoop/card-matching-game',
+    hostedSite: 'https://cozy-torte-539533.netlify.app/',
     techStack: ['javascript', 'html', 'css' ]
   }
 ];
@@ -47,11 +51,18 @@ const Projects = () => {
         <div className="project-card" key={project.title}>
           <div className="project-card-top-line">
             <div className="project-title">
-              <h4>{project.title}</h4>
+              <h3>{project.title}</h3>
             </div>
             <div className="project-icons">
-              <FaGithub size={28} />
-              <p style={{ fontSize: '28px' }}>🌏</p>
+              <a href={project.gitHub}>
+                <FaGithub size={28} />
+              </a>
+              <div className="hosted-site-container">
+                {project.hostedSite? <a 
+                  href={project.hostedSite} target="_blank">
+                  <p style={{ fontSize: '28px' }}>🌏</p>
+                  </a> : <p className="no-hosted-site"style={{ fontSize: '28px' }}>🌏</p>}
+                </div>
             </div>
           </div>
           <div className="flip-card-container">
@@ -65,7 +76,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="bottom-row">
-            <p>Tech stack</p>
+            <p className="tech-list-label">Tech stack</p>
             <TechStack techStack={project.techStack}/>
           </div>
         </div>

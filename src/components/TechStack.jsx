@@ -36,41 +36,19 @@ const TechStack = ({ techStack }) => {
 
     return (
         <div className="tech-stack-container">
-          {techStack.map((tech, index) => (
+          {techStack.map((tech, index)=> (
             <div key={index}>
-              <div
-                className="tech-logo-container"
-                aria-owns={`mouse-over-popover-${index}`}
-                aria-haspopup="true"
-                onMouseEnter={(event) => handlePopoverOpen(event, index)}
-                onMouseLeave={() => handlePopoverClose(index)}
-              >
-                <img
+              <div className="tech-logo-container">
+                <div className="tech-logo">
+                  <img
                   src={techStackLogos[tech].src}
                   alt={`${techStackLogos[tech].alt} logo`}
-                  className="tech-logo"
-                />
+                  />
+                </div>
+                <div className="tech-title">
+                  <p>{techStackLogos[tech].alt}</p>
+                </div>
               </div>
-              <Popover
-                id={`mouse-over-popover-${index}`}
-                sx={{
-                  pointerEvents: 'none',
-                }}
-                open={Boolean(anchorEl[index])}
-                anchorEl={anchorEl[index]}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
-                }}
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
-                }}
-                onClose={() => handlePopoverClose(index)}
-                disableRestoreFocus
-              >
-                <Typography sx={{ p: 1 }}>{techStackLogos[tech].alt}</Typography>
-              </Popover>
             </div>
           ))}
         </div>
