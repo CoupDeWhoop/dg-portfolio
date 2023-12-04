@@ -22,10 +22,16 @@ const projectsData = [
   {
     title: 'NC News API',
     description: 'This is the restful API. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe accusamus dolorem tempora, doloremque odio provident ut? Similique quo fuga itaque? Alias necessitatibus illo suscipit, provident hic blanditiis magnam harum ipsum.',
-    image: '',
+    image: 'src/assets/project-images/nc-news-api.png',
     github: 'https://github.com/CoupDeWhoop/be-nc-news',
     hostedSite: 'https://nc-news-api-zlkx.onrender.com/api/',
     techStack: ['node', 'javascript', 'express', 'postgresql']
+  },
+  {
+    title: 'Card Matching Memory Game',
+    description: 'retro football cards matching game. used domLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores eos dolorem error! Dolorem veniam, architecto voluptatum recusandae ullam distinctio veritatis aut repudiandae explicabo, quae earum praesentium unde adipisci optio.',
+    image: 'src/assets/project-images/card-matcher.png',
+    techStack: ['javascript', 'html', 'css' ]
   }
 ];
 
