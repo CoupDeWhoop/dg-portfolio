@@ -11,7 +11,9 @@ a {
 a:visited {
   color: black;
 }
-
+a:hover {
+  color: #535bf2;
+}
 html {
   font-size: 18px;
 }
@@ -25,62 +27,63 @@ body {
 }
 main {
   display: flex;
-  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 2rem; */
   max-width: 1300px;
 }
-.header {
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  width: 40%;
+
+/* .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-right: 2rem;
-}
+} */
 
 .header h1{
   font-family: 'Poppins', sans-serif;
-  font-size: 74px;
+  font-size: 40px;
   font-weight: 500;
   padding: 1rem;
 }
 .header p{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 24px;
   padding-left: 1rem;
-
 }
 .header-card {
-  max-width: 400px;
+  padding:20px;
 }
 .profile-image {
-  width: 170px;
-  padding-bottom: 20px;
+  width: 60px;
 }
+
 .job-title-container {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
+
 .scroll-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
-
+  width: 100%;
 }
 .intro-text {
   margin: 30px;
 }
 .project-list {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .project-card {
-  margin: 30px 30px;
+  margin: 15px 15px;
+  width: 95vw;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -111,8 +114,8 @@ main {
   align-items: center;
 }
 .flip-card-container {
-  width: 500px;
-  height: 333.33px;
+  width: 90vw;
+  height: 60vw;
   perspective: 1000px;
 }
 .flip-card {
@@ -194,13 +197,55 @@ main {
 .tech-logo-container:hover .tech-title {
   opacity: 1;
 }
-@media (max-width: 1200px) {
-  .job-title-container {
+
+@media (min-width: 800) {
+  main {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
   }
 }
+@media (min-width: 1200px) {
+  main {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .header {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+  }
+  .header-card {
+    max-width: 400px;
+    padding:5px;
+  }
+  .header h1 {
+    font-size: 74px;
+  }
+  .header p{
+    font-size: 48px;
+  }
+  .profile-image {
+    width: 170px;
+    padding-bottom: 20px;
+  }
+  .scroll-container {
+    width: 60%;
+  }
+  .project-card {
+    width: 640px;
+    margin: 30px 30px;
+  }
+  .flip-card-container {
+    width: 500px;
+    height: 333.33px;
+  }
+} 
 /* @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -208,13 +253,4 @@ main {
   100% {
     opacity: 1;
   }
-} */
-
-
-/* @media (max-width: 1040px) { needs to be header at the top up to here
-  .job-title-container {
-    flex-direction: column;
-    align-items: flex-end; 
-  }
-
 } */

@@ -17,7 +17,7 @@ const projectsData = [
     description: 'Fromt end we applicaiton built in react. etc Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aut magni obcaecati nesciunt iusto recusandae, iste quo consequatur a tempora animi reprehenderit perferendis nihil aliquam magnam minima? Minus, a sunt?',
     image: 'src/assets/project-images/nc-news.png',
     gitHub: 'https://github.com/CoupDeWhoop/fe-nc-news',
-    hostedSite: '',
+    hostedSite: 'https://incomparable-pithivier-d5878b.netlify.app/',
     hostedAltText: 'under construction 👷🏼‍♂️',
     techStack: ['react', 'javascript', 'axios', 'css']
   },
@@ -53,6 +53,7 @@ const Projects = () => {
     setCardFlipped(newCardState)
   }
 
+
   return (
     <section className="project-list">
       {projectsData.map((project, index) => (
@@ -69,7 +70,7 @@ const Projects = () => {
                 {project.hostedSite? <a 
                   href={project.hostedSite} target="_blank">
                   <p style={{ fontSize: '28px' }}>🌏</p>
-                  </a> : <p className="no-hosted-site"style={{ fontSize: '28px' }}>🌏</p>}
+                  </a> : null }
                 </div>
             </div>
           </div>
