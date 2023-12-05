@@ -3,8 +3,8 @@ import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 
 const techStackLogos = {
-    'react-native': { src: 'src/assets/logos/react-native-white.png', alt: 'React Native' },
-    typescript: { src: 'src/assets/logos/ts.svg', alt: 'TypeScript' },
+    'react-native': { src: '../assets/logos/react-native-white.png', alt: 'React Native' },
+    typescript: { src: '..//assets/logos/ts.svg', alt: 'TypeScript' },
     firebase: { src: 'src/assets/logos/firebase-1.svg', alt: 'Firebase Realtime Database' },
     expo: { src: 'src/assets/logos/expo-1.svg', alt: 'Expo' },
     react: { src: 'src/assets/logos/react-1.svg', alt: 'React' },
