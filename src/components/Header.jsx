@@ -6,7 +6,7 @@ export default function Header () {
                 <div className="job-title-container">
                     <img
                     className="profile-image"
-                    src="src/assets/dev-images/web-developer.svg"
+                    src="/dev-images/web-developer.svg"
                     />
                     <p>software developer</p>
                 </div>

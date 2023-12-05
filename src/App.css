@@ -198,7 +198,7 @@ main {
   opacity: 1;
 }
 
-@media (min-width: 800) {
+@media (min-width: 800px) {
   main {
     flex-direction: column;
   }
