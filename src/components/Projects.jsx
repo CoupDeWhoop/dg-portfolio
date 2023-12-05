@@ -6,7 +6,7 @@ const projectsData = [
   {
     title: 'Trippy',
     description: 'A description of Trippy. Overlapping user interfaces. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia, quos, praesentium, esse numquam sapiente corrupti facere ipsam laborum accusamus delectus voluptas blanditiis fugit totam sint exercitationem tempore quas ducimus. ' ,
-    image: '../assets/project-images/Trippy screens transparent.png',
+    image: 'src/assets/project-images/Trippy screens transparent.png',
     gitHub: 'https://github.com/Proc31/trippy',
     hostedSite: '',
     hostedAltText: 'This app was made for ios or android, please visit the GitHub page for more details',
