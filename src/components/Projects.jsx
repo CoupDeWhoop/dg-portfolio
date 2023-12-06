@@ -8,7 +8,7 @@ const projectsData = [
     description: 'A app developed in a team of 6 streamlining the school trip-planning process. In three distinct user types: teacher, parent or pupil; trip details are managed, parental consent given, inventory items listed, whilst meeting points & locations are shared on the map-view. Head-counts are handled through a QR code system displayed uniquely by each pupil and scanned by the teacher.',
     image: '/project-images/Trippy screens transparent.png',
     gitHub: 'https://github.com/Proc31/trippy',
-    hostedSite: '',
+    hostedSite: 'https://northcoders.com/project-phase/trippy',
     hostedAltText: 'This app was made for ios or android, please visit the GitHub page for more details',
     techStack: ['react-native', 'typescript', 'firebase', 'expo', 'paper']
   },
