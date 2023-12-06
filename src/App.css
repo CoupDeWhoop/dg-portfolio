@@ -209,12 +209,12 @@ main {
   pointer-events: none; /* stopped pop up when hovering on child of tech-logo-container */
 }
 .tech-logo-container:hover .tech-title {
-  opacity: 1;
+  animation: fadeOut 3s ease-in-out;
 }
 @media (max-width: 400px) {
   .tech-logo img{
-    height: 30px;
-    max-width: 30px;
+    height: 40px;
+    max-width: 40px;
   }
   .tech-stack-container {
     gap: 5px;
@@ -251,12 +251,17 @@ main {
   .tech-title {
     right: auto;
   }
+  .tech-logo-container:hover .tech-title {
+    opacity: 1;
+    animation: none; /* Disable the animation on larger screens */
+  }
   .tech-list-label {
     margin-right: 20px;
   }
   .flip-card-back p{
     font-size: 1rem;
   }
+
 }
 
 @media (min-width: 1200px) {
@@ -304,3 +309,12 @@ main {
     opacity: 1;
   }
 } */
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
