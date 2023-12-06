@@ -30,7 +30,7 @@ const projectsData = [
     techStack: ['node', 'javascript', 'express', 'postgresql']
   },
   {
-    title: 'Card Matching Memory Game',
+    title: 'Card Matching Game',
     description: 'Retro football cards matching game. Made early in the front-end part of the Northcoders bootcamp as a way of learning to manipulate the Document Object Model (DOM)',
     image: '/project-images/card-matcher.png',
     gitHub: 'https://github.com/CoupDeWhoop/card-matching-game',

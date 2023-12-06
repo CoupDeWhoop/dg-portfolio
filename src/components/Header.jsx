@@ -15,10 +15,10 @@ export default function Header () {
                 </div>
                 <div className="social-links">
                     <a href="https://www.linkedin.com/in/david-greenland-360aba291/" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin size={30} />
+                        <FaLinkedin size={38} />
                     </a>
                     <a href="https://github.com/CoupDeWhoop" target="_blank" rel="noopener noreferrer">
-                        <FaGithub size={30} />
+                        <FaGithub size={38} />
                     </a>
                 </div>
             </div>
