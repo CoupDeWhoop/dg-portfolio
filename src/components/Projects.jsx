@@ -86,7 +86,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="bottom-row">
-            <p className="tech-list-label">Tech stack</p>
+            {/* <p className="tech-list-label">Tech stack</p> */}
             <TechStack techStack={project.techStack}/>
           </div>
         </div>

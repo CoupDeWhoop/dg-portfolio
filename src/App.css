@@ -162,13 +162,15 @@ main {
   padding: 2rem;
   transform: rotateY(180deg);
 }
+.flip-card-back p{
+  font-size: 0.8rem;;
+}
 .project-image {
   height: 90%;
   border-radius: 0.5rem;
 }
 .tech-list-label {
   font-weight: 500;
-  margin-right: 20px;
 }
 .tech-stack-container {
   display: flex;
@@ -213,6 +215,7 @@ main {
   .tech-stack-container {
     gap: 5px;
   }
+
 }
 @media (min-width: 500px) {
   main {
@@ -240,6 +243,15 @@ main {
   .flip-card-container {
     width: 500px;
     height: 333.33px;
+  }
+  .tech-title {
+    right: auto;
+  }
+  .tech-list-label {
+    margin-right: 20px;
+  }
+  .flip-card-back p{
+    font-size: 1rem;
   }
 }
 
