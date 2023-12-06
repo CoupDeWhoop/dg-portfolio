@@ -5,7 +5,7 @@ import TechStack from "./TechStack";
 const projectsData = [
   {
     title: 'Trippy',
-    description: 'A description of Trippy. Overlapping user interfaces. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia, quos, praesentium, esse numquam sapiente corrupti facere ipsam laborum accusamus delectus voluptas blanditiis fugit totam sint exercitationem tempore quas ducimus. ' ,
+    description: 'A app developed in a team of 6 streamlining the school trip-planning process. In three distinct user types: teacher, parent or pupil; trip details are managed, parental consent given, inventory items listed, whilst meeting points & locations are shared on the map-view. Head-counts are handled through a QR code system displayed uniquely by each pupil and scanned by the teacher.',
     image: '/project-images/Trippy screens transparent.png',
     gitHub: 'https://github.com/Proc31/trippy',
     hostedSite: '',
@@ -14,7 +14,7 @@ const projectsData = [
   },
   {
     title: 'NC News',
-    description: 'Fromt end we applicaiton built in react. etc Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aut magni obcaecati nesciunt iusto recusandae, iste quo consequatur a tempora animi reprehenderit perferendis nihil aliquam magnam minima? Minus, a sunt?',
+    description: 'A fully responsive web application for browsing news articles, commenting, voting and user interaction built using React, CSS and elements of Material UI.',
     image: '/project-images/nc-news.png',
     gitHub: 'https://github.com/CoupDeWhoop/fe-nc-news',
     hostedSite: 'https://incomparable-pithivier-d5878b.netlify.app/',
@@ -23,7 +23,7 @@ const projectsData = [
   },
   {
     title: 'NC News API',
-    description: 'This is the restful API. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe accusamus dolorem tempora, doloremque odio provident ut? Similique quo fuga itaque? Alias necessitatibus illo suscipit, provident hic blanditiis magnam harum ipsum.',
+    description: 'RESTful API for my NC News Front-end project. Designed to deliver articles, comments, votes, categories and users from the database. Implemented using Jest, Husky and TDD with NodeJS, Express and PostgreSQL.',
     image: '/project-images/nc-news-api.png',
     gitHub: 'https://github.com/CoupDeWhoop/be-nc-news',
     hostedSite: 'https://nc-news-api-zlkx.onrender.com/api/',
@@ -31,7 +31,7 @@ const projectsData = [
   },
   {
     title: 'Card Matching Memory Game',
-    description: 'retro football cards matching game. used domLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores eos dolorem error! Dolorem veniam, architecto voluptatum recusandae ullam distinctio veritatis aut repudiandae explicabo, quae earum praesentium unde adipisci optio.',
+    description: 'Retro football cards matching game. Made early in the front-end part of the Northcoders bootcamp as a way of learning to manipulate the Document Object Model (DOM)',
     image: '/project-images/card-matcher.png',
     gitHub: 'https://github.com/CoupDeWhoop/card-matching-game',
     hostedSite: 'https://cozy-torte-539533.netlify.app/',

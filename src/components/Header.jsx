@@ -1,3 +1,5 @@
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+
 export default function Header () {
     return (
         <header className="header">
@@ -7,8 +9,17 @@ export default function Header () {
                     <img
                     className="profile-image"
                     src="/dev-images/web-developer.svg"
+                    alt="Web Developer"
                     />
                     <p>software developer</p>
+                </div>
+                <div className="social-links">
+                    <a href="https://www.linkedin.com/in/david-greenland-360aba291/" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin size={30} />
+                    </a>
+                    <a href="https://github.com/CoupDeWhoop" target="_blank" rel="noopener noreferrer">
+                        <FaGithub size={30} />
+                    </a>
                 </div>
             </div>
         </header>
