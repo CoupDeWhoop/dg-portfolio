@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 import TechStack from "./TechStack";
 
 const projectsData = [
@@ -64,12 +64,12 @@ const Projects = () => {
             </div>
             <div className="project-icons">
               <a href={project.gitHub}>
-                <FaGithub size={28} />
+                <FaGithub size={28} alt={`${project.title} github link`}/>
               </a>
               <div className="hosted-site-container">
                 {project.hostedSite? <a 
                   href={project.hostedSite} target="_blank">
-                  <p style={{ fontSize: '28px' }}>🌏</p>
+                    <FaGlobe size={28} alt={`${project.title} web link`}/> 
                   </a> : null }
                 </div>
             </div>

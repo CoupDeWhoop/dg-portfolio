@@ -6,7 +6,6 @@
 a {
   text-decoration: none;
   color: black;
-  line-height: 0; /* solved layout issue */
 }
 a:visited {
   color: black;
@@ -114,6 +113,7 @@ main {
 }
 
 .project-icons {
+  line-height: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
