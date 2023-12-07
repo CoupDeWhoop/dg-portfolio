@@ -32,7 +32,7 @@ const projectsData = [
   {
     title: 'Card Matching Game',
     description: 'Retro football cards matching game. Made early in the front-end part of the Northcoders bootcamp as a way of learning to manipulate the Document Object Model (DOM)',
-    image: '/project-images/card-matcher.png',
+    image: '/project-images/card-matcher-2.png',
     gitHub: 'https://github.com/CoupDeWhoop/card-matching-game',
     hostedSite: 'https://cozy-torte-539533.netlify.app/',
     techStack: ['javascript', 'html', 'css' ]

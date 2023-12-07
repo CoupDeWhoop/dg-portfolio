@@ -142,7 +142,7 @@ main {
 }
 .flip-card:hover {
   border: 1px solid #3498db;
-  box-shadow: 0.5rem 0.5rem 0.5rem rgba(52, 152, 219, 0.2);
+  /* box-shadow: 0.5rem 0.5rem 0.5rem rgba(52, 152, 219, 0.2); */
 }
 .flip-card-front {
   background-color: #c9d7e4;
