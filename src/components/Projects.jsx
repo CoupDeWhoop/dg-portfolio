@@ -79,6 +79,7 @@ const Projects = () => {
             <div className={'flip-card' + (cardFlipped[index]? ' flipped': '')}>
               <div className="flip-card-front" style={{backgroundColor: pickColour(index)}}>
                 <img className="project-image" src={project.image} alt={project.title} />
+                <img className="tap-to-flip-icon" src={'/other-icons/click_finger_icon.png'} alt={'tap to flip'} />
               </div>
               <div className="flip-card-back">
                 <p>{project.description}</p>

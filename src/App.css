@@ -144,8 +144,13 @@ main {
   border: 1px solid #3498db;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(52, 152, 219, 0.2);
 }
+.flip-card-front {
+  background-color: #c9d7e4;
+  position: relative; /* had to add this for tap-to-flip-icon */
+}
 .flipped {
-  transform: rotateY(180deg); /* <=>  rotatex(.5turn) */
+  transform: rotateY(180deg); 
+  position: absolute; /* this is needed to get it behind when flipped */
 }
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -157,8 +162,13 @@ main {
   align-items: center;
   border-radius: 0.5rem;
 }
-.flip-card-front {
-  background-color: #c9d7e4;
+
+.tap-to-flip-icon {
+  position: absolute;
+  color: black;
+  width: 40px;
+  right: 5px;
+  bottom: 5px;
 }
 .flip-card-back {
   background-color: #517fa4;
