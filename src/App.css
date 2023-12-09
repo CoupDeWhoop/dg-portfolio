@@ -97,6 +97,7 @@ main {
   margin: 25px 15px;
   width: 95vw;
   border-radius: 1rem;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
