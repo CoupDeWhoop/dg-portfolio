@@ -97,7 +97,7 @@ main {
   margin: 25px 15px;
   width: 95vw;
   border-radius: 1rem;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +110,7 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 1rem;
 }
 
 .project-icons {

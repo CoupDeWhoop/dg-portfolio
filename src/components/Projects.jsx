@@ -14,12 +14,12 @@ const projectsData = [
   },
   {
     title: 'NC News',
-    description: 'A fully responsive web application for browsing news articles, commenting, voting and user interaction built using React, CSS and elements of Material UI.',
+    description: 'A social news aggregation, web content rating and discussion website. NC News has articles which are divided into topics, and each article has user-curated ratings from upvotes and downvotes using the API. Users can also add comments about an article.',
     image: '/project-images/nc-news.png',
     gitHub: 'https://github.com/CoupDeWhoop/fe-nc-news',
     hostedSite: 'https://incomparable-pithivier-d5878b.netlify.app/',
     hostedAltText: 'under construction 👷🏼‍♂️',
-    techStack: ['react', 'javascript', 'axios', 'css']
+    techStack: ['react', 'javascript', 'axios', 'css', 'mui']
   },
   {
     title: 'NC News API',

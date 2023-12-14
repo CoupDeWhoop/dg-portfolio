@@ -15,7 +15,8 @@ const techStackLogos = {
     node: {src: '/logos/nodejs-2.svg', alt: 'Node.js'},
     express: {src: '/logos/express-109.svg', alt: 'Express'},
     postgresql: {src: '/logos/postgresql.svg', alt: 'PostgreSQL'},
-    paper: {src: '/logos/p_monogram.png', alt: 'React Native Paper'}
+    paper: {src: '/logos/p_monogram.png', alt: 'React Native Paper'},
+    mui: {src: '/logos/material-ui.svg', alt: 'Material UI'}
   };
 
 const TechStack = ({ techStack }) => {
