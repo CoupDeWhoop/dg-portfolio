@@ -13,6 +13,14 @@ const projectsData = [
     techStack: ['react-native', 'typescript', 'firebase', 'expo', 'paper']
   },
   {
+    title: 'Card Matching Game',
+    description: 'Retro football cards matching game. Started in the front-end part of the Northcoders bootcamp, It now has more players and I learned how to shuffle the cards using the Fisher-Yates Sorting Algorithm. So although a simple game I learned a lot from working on it.',
+    image: '/project-images/card-matcher-2.png',
+    gitHub: 'https://github.com/CoupDeWhoop/card-matching-game',
+    hostedSite: 'https://cozy-torte-539533.netlify.app/',
+    techStack: ['javascript', 'html', 'css' ]
+  },
+  {
     title: 'NC News',
     description: 'A social news aggregation, web content rating and discussion website. NC News has articles which are divided into topics, and each article has user-curated ratings from upvotes and downvotes using the API. Users can also add comments about an article.',
     image: '/project-images/nc-news.png',
@@ -28,14 +36,6 @@ const projectsData = [
     gitHub: 'https://github.com/CoupDeWhoop/be-nc-news',
     hostedSite: 'https://nc-news-api-zlkx.onrender.com/api/',
     techStack: ['node', 'javascript', 'express', 'postgresql']
-  },
-  {
-    title: 'Card Matching Game',
-    description: 'Retro football cards matching game. Made early in the front-end part of the Northcoders bootcamp as a way of learning to manipulate the Document Object Model (DOM)',
-    image: '/project-images/card-matcher-2.png',
-    gitHub: 'https://github.com/CoupDeWhoop/card-matching-game',
-    hostedSite: 'https://cozy-torte-539533.netlify.app/',
-    techStack: ['javascript', 'html', 'css' ]
   }
 ];
 const colourPalette = ['#b8e0d4','#809bce', '#eac4d5', '#d6eadf',  '#95b8d1' ]
