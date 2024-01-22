@@ -14,7 +14,7 @@ const projectsData = [
   },
   {
     title: 'Card Matching Game',
-    description: 'Retro football cards matching game. Started in the front-end part of the Northcoders bootcamp, It now has more players and I learned how to shuffle the cards using the Fisher-Yates Sorting Algorithm. So although a simple game I learned a lot from working on it.',
+    description: 'Retro football cards matching game. Started in the front-end part of the Northcoders bootcamp, It now has lots of players and I learned how to shuffle the cards using the Fisher-Yates sorting algorithm. So although a simple game I learned a lot from making it - please have a go!',
     image: '/project-images/card-matcher-2.png',
     gitHub: 'https://github.com/CoupDeWhoop/card-matching-game',
     hostedSite: 'https://cozy-torte-539533.netlify.app/',
