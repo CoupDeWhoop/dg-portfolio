@@ -75,15 +75,15 @@ const Projects = () => {
         <div className="project-card" key={project.title}>
           <div className="project-card-top-line">
             <div className="project-title">
-              <h3><a href={project.gitHub} target="blank">{project.title}</a></h3>
+              <h3><a href={project.gitHub} target="_blank" rel="noopener noreferrer">{project.title}</a></h3>
             </div>
             <div className="project-icons">
-              <a href={project.gitHub} target="blank">
+              <a href={project.gitHub} target="_blank" rel="noopener noreferrer">
                 <FaGithub size={28} alt={`${project.title} github link`}/>
               </a>
               <div className="hosted-site-container">
                 {project.hostedSite? <a 
-                  href={project.hostedSite} target="blank">
+                  href={project.hostedSite} target="_blank" rel="noopener noreferrer">
                     <FaGlobe size={28} alt={`${project.title} web link`}/> 
                   </a> : null }
                 </div>
