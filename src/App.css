@@ -41,15 +41,16 @@ main {
   max-width: 1300px;
 }
 
-/* .header {
+.header {
   display: flex;
   flex-direction: column;
-} */
+}
 
 .header h1{
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 600;
+  text-align: center;
   padding: 1rem;
 }
 .header p{
@@ -57,6 +58,10 @@ main {
   font-weight: 500;
   font-size: 24px;
   padding-left: 1rem;
+}
+.header h3 {
+  font-size: 18px;
+  text-align: center;
 }
 .header-card {
   padding:20px;
@@ -239,6 +244,9 @@ main {
   .header h1 {
     font-size: 64px;
   }
+  .header h3 {
+    font-size: 20px;
+  }
   .header p{
     font-size: 38px;
   }
@@ -302,9 +310,15 @@ main {
   .header p{
     font-size: 48px;
   }
+  .header h3 {
+    font-size: 28px;
+  }
   .profile-image {
     width: 170px;
     padding-bottom: 20px;
+  }
+  .social-links {
+    padding-bottom: 10px;
   }
   .scroll-container {
     width: 60%;

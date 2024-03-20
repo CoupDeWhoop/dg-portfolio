@@ -4,6 +4,21 @@ import TechStack from "./TechStack";
 
 const projectsData = [
   {
+    title: 'Sonata',
+    description: 'An intuitive application designed to streamline the tracking of music lessons and practice sessions. Sonata enables users to log detailed notes, timings and other valuable study data. While logging practice, topics can be pulled in from the lessons in order to focus the work. Statistics are pleasingly displayed for motivation. Built for iOS and Android using React Native',
+    image: '/project-images/sonata.png',
+    gitHub: 'https://github.com/CoupDeWhoop/sonata-fe',
+    techStack: ['react-native', 'javascript', 'expo', 'paper']
+  },
+  {
+    title: 'Sonata API',
+    description: 'Engineered a robust back-end infrastructure using Node.js and Express. Used Jest and Supertest to validate the behaviour of all endpoints. A PostgreSQL database has been configured to store and manage user data securely. Implemented JSON web tokens for secure authorisation and Bcrypt for password encryption.',
+    image: '/project-images/nc-news-api.png',
+    gitHub: 'https://github.com/CoupDeWhoop/sonata',
+    hostedSite: 'https://sonata-gj0z.onrender.com/api',
+    techStack: ['node', 'javascript', 'express', 'postgresql']
+  },
+  {
     title: 'Trippy',
     description: 'An app developed in a team of 6 streamlining the school trip-planning process. In three distinct user types: teacher, parent or pupil; trip details are managed, parental consent given, inventory items listed, whilst meeting points & locations are shared on the map-view. Head-counts are handled through a QR code system displayed uniquely by each pupil and scanned by the teacher.',
     image: '/project-images/Trippy screens transparent.png',
@@ -11,14 +26,6 @@ const projectsData = [
     hostedSite: 'https://northcoders.com/project-phase/trippy',
     hostedAltText: 'This app was made for ios or android, please visit the GitHub page for more details',
     techStack: ['react-native', 'typescript', 'firebase', 'expo', 'paper']
-  },
-  {
-    title: 'Card Matching Game',
-    description: 'Retro football cards matching game. Started in the front-end part of the Northcoders bootcamp, It now has lots of players and I learned how to shuffle the cards using the Fisher-Yates sorting algorithm. So although a simple game I learned a lot from making it - please have a go!',
-    image: '/project-images/card-matcher-2.png',
-    gitHub: 'https://github.com/CoupDeWhoop/card-matching-game',
-    hostedSite: 'https://cozy-torte-539533.netlify.app/',
-    techStack: ['javascript', 'html', 'css' ]
   },
   {
     title: 'NC News',
@@ -36,7 +43,15 @@ const projectsData = [
     gitHub: 'https://github.com/CoupDeWhoop/be-nc-news',
     hostedSite: 'https://nc-news-api-zlkx.onrender.com/api/',
     techStack: ['node', 'javascript', 'express', 'postgresql']
-  }
+  },
+  {
+    title: 'Card Matching Game',
+    description: 'Retro football cards matching game. Started in the front-end part of the Northcoders bootcamp with Phil Dixon [github.com/Phil-Code] It now has lots of players and I give cards a good shuffle the cards using the Fisher-Yates sorting algorithm. Please have a go!',
+    image: '/project-images/card-matcher-2.png',
+    gitHub: 'https://github.com/CoupDeWhoop/card-matching-game',
+    hostedSite: 'https://cozy-torte-539533.netlify.app/',
+    techStack: ['javascript', 'html', 'css' ]
+  },
 ];
 const colourPalette = ['#b8e0d4','#809bce', '#eac4d5', '#d6eadf',  '#95b8d1' ]
 

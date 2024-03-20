@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 export default function Header () {
     return (
@@ -20,6 +20,9 @@ export default function Header () {
                     <a href="https://github.com/CoupDeWhoop" target="_blank" rel="noopener noreferrer">
                         <FaGithub size={38} />
                     </a>
+                </div>
+                <div>
+                    <h3><a href="mailto:greenlanddev01@gmail.com">greenlanddev01@gmail.com</a></h3>
                 </div>
             </div>
         </header>
