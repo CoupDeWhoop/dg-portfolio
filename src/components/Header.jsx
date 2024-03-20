@@ -11,7 +11,7 @@ export default function Header () {
                     src="/dev-images/web-developer.svg"
                     alt="Web Developer"
                     />
-                    <p>software developer</p>
+                    <p>software developer</p>                
                 </div>
                 <div className="social-links">
                     <a href="https://www.linkedin.com/in/david-greenland-360aba291/" target="_blank" rel="noopener noreferrer">

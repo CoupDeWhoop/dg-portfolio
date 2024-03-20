@@ -44,6 +44,7 @@ main {
 .header {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .header h1{
@@ -73,13 +74,17 @@ main {
 .job-title-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 30px;
+
+} 
+.job-title-container p {
+  width: 230px; /*problems with centring image and text on same line */
 }
 .social-links {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .scroll-container {
   display: flex;
@@ -241,6 +246,7 @@ main {
   main {
     flex-direction: column;
   }
+
   .header h1 {
     font-size: 64px;
   }
@@ -254,6 +260,11 @@ main {
     width: 140px;
   }
 
+}
+@media (min-width: 573px) {
+  /* .job-title-container {
+    width: initial;
+  } */
 }
 @media (min-width: 650px) {
   .scroll-container {
@@ -303,6 +314,10 @@ main {
   .header-card {
     max-width: 400px;
     padding:5px;
+  }
+  .job-title-container {
+    margin-top: 70px;
+    margin-bottom: 90px;
   }
   .header h1 {
     font-size: 74px;
