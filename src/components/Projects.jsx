@@ -4,6 +4,15 @@ import TechStack from "./TechStack";
 
 const projectsData = [
   {
+    title: "Curator",
+    description:
+      "A website that creates viewer-driven virtual exhibitions from the combined catalogues of museums and galleries. It allows users to curate and organize their own exhibitions from a vast array of artworks and artefacts. It is of great use to researchers, students, and art lovers alike.",
+    image: "/project-images/curator.png",
+    gitHub: "https://github.com/CoupDeWhoop/exhibition-curator",
+    hostedSite: "https://exhibition-curator.vercel.app/chicago/gallery",
+    techStack: ["nextJS", "typescript", "tailwind"],
+  },
+  {
     title: "Sonata",
     description:
       "An intuitive application designed to streamline the tracking of music lessons and practice sessions. Sonata enables users to log detailed notes, timings and other valuable study data. While logging practice, topics can be pulled in from the lessons in order to focus the work. Practice statistics are displayed for motivation. Built for iOS and Android using React Native. I also adapted the components to get a version working in the browser",
