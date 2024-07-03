@@ -25,7 +25,7 @@ const projectsData = [
     title: "Sonata API",
     description:
       "Engineered a robust back-end infrastructure using Node.js and Express. Used Jest and Supertest to validate the behaviour of all endpoints. A PostgreSQL database has been configured to store and manage user data securely. Implemented JSON web tokens for secure authorisation and Bcrypt for password encryption.",
-    image: "/project-images/nc-news-api.png",
+    image: "/project-images/code.png",
     gitHub: "https://github.com/CoupDeWhoop/sonata",
     hostedSite: "https://sonata-gj0z.onrender.com/api",
     techStack: ["node", "javascript", "express", "postgresql"],
