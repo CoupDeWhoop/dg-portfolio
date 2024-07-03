@@ -47,15 +47,15 @@ main {
   align-items: center;
 }
 
-.header h1{
-  font-family: 'Poppins', sans-serif;
+.header h1 {
+  font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 600;
   text-align: center;
   padding: 1rem;
 }
-.header p{
-  font-family: 'Poppins', sans-serif;
+.header p {
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 24px;
   padding-left: 1rem;
@@ -65,7 +65,7 @@ main {
   text-align: center;
 }
 .header-card {
-  padding:20px;
+  padding: 20px;
 }
 .profile-image {
   width: 90px;
@@ -75,15 +75,14 @@ main {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-
-} 
+}
 .job-title-container p {
   width: 230px; /*problems with centring image and text on same line */
 }
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 2rem;
   margin-top: 10px;
 }
 .scroll-container {
@@ -115,7 +114,7 @@ main {
   background-color: #fefefe;
 }
 
-.project-card-top-line{
+.project-card-top-line {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,7 +127,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .bottom-row {
@@ -160,10 +159,11 @@ main {
   position: relative; /* had to add this for tap-to-flip-icon */
 }
 .flipped {
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);
   position: absolute; /* this is needed to get it behind when flipped */
 }
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   backface-visibility: hidden;
   height: 100%;
@@ -187,8 +187,8 @@ main {
   padding: 2rem;
   transform: rotateY(180deg);
 }
-.flip-card-back p{
-  font-size: 0.8rem;;
+.flip-card-back p {
+  font-size: 0.8rem;
 }
 .project-image {
   height: 90%;
@@ -209,8 +209,7 @@ main {
   align-items: center;
 }
 
-
-.tech-logo img{
+.tech-logo img {
   height: 50px;
   max-width: 80px;
   border-radius: 4px;
@@ -233,14 +232,13 @@ main {
   animation: fadeOut 3s ease-in-out;
 }
 @media (max-width: 400px) {
-  .tech-logo img{
+  .tech-logo img {
     height: 40px;
     max-width: 40px;
   }
   .tech-stack-container {
     gap: 5px;
   }
-
 }
 @media (min-width: 500px) {
   main {
@@ -253,13 +251,12 @@ main {
   .header h3 {
     font-size: 20px;
   }
-  .header p{
+  .header p {
     font-size: 38px;
   }
   .profile-image {
     width: 140px;
   }
-
 }
 @media (min-width: 573px) {
   /* .job-title-container {
@@ -288,10 +285,9 @@ main {
   .tech-list-label {
     margin-right: 20px;
   }
-  .flip-card-back p{
+  .flip-card-back p {
     font-size: 1rem;
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -313,7 +309,7 @@ main {
   }
   .header-card {
     max-width: 400px;
-    padding:5px;
+    padding: 5px;
   }
   .job-title-container {
     margin-top: 70px;
@@ -322,7 +318,7 @@ main {
   .header h1 {
     font-size: 74px;
   }
-  .header p{
+  .header p {
     font-size: 48px;
   }
   .header h3 {
@@ -338,9 +334,7 @@ main {
   .scroll-container {
     width: 60%;
   }
-
-
-} 
+}
 /* @keyframes fadeIn {
   0% {
     opacity: 0;
