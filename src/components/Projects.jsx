@@ -95,7 +95,7 @@ const Projects = () => {
             <div className="project-title">
               <h3>
                 <a
-                  href={project.gitHub}
+                  href={project.hostedSite || project.gitHub}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
