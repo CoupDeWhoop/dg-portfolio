@@ -15,7 +15,7 @@ const projectsData = [
   {
     title: "Sonata",
     description:
-      "An intuitive application designed to streamline the tracking of music lessons and practice sessions. Sonata enables users to log detailed notes, timings and other valuable study data. While logging practice, topics can be pulled in from the lessons in order to focus the work. Practice statistics are displayed for motivation. Built for iOS and Android using React Native. I also adapted the components to get a version working in the browser",
+      "Designed to streamline the tracking of music lessons and practice sessions, Sonata enables users to log detailed notes, timings and other valuable study data. Practice stats page for motivation. Built for iOS and Android using React Native.",
     image: "/project-images/sonata.png",
     gitHub: "https://github.com/CoupDeWhoop/sonata-fe",
     hostedSite: "https://sonata-app.netlify.app",
@@ -24,7 +24,7 @@ const projectsData = [
   {
     title: "Sonata API",
     description:
-      "Engineered a robust back-end infrastructure using Node.js and Express. Used Jest and Supertest to validate the behaviour of all endpoints. A PostgreSQL database has been configured to store and manage user data securely. Implemented JSON web tokens for secure authorisation and Bcrypt for password encryption.",
+      "Engineered a robust back-end infrastructure using Node.js and Express. Uses a PostGres Database, implementing JSON web tokens for secure authorisation and Bcrypt for password encryption.",
     image: "/project-images/code.png",
     gitHub: "https://github.com/CoupDeWhoop/sonata",
     hostedSite: "https://sonata-gj0z.onrender.com/api",
@@ -44,7 +44,7 @@ const projectsData = [
   {
     title: "NC News",
     description:
-      "A social news aggregation, web content rating and discussion website. NC News has articles which are divided into topics, and each article has user-curated ratings from upvotes and downvotes using the API. Users can also add comments about an article.",
+      "A social news aggregation, web content rating and discussion website. Features include commenting, upvoting articles and filtering articles.",
     image: "/project-images/nc-news.png",
     gitHub: "https://github.com/CoupDeWhoop/fe-nc-news",
     hostedSite: "https://incomparable-pithivier-d5878b.netlify.app/",
@@ -63,7 +63,7 @@ const projectsData = [
   {
     title: "Card Matching Game",
     description:
-      "Retro football cards matching game. Started in the front-end part of the Northcoders bootcamp with Phil Dixon [github.com/Phil-Code] It now has lots of players and I give cards a good shuffle the cards using the Fisher-Yates sorting algorithm. Please have a go!",
+      "Retro football cards matching game. An example of work done during the early part of the Northcoders bootcamp.",
     image: "/project-images/card-matcher-2.png",
     gitHub: "https://github.com/CoupDeWhoop/card-matching-game",
     hostedSite: "https://cozy-torte-539533.netlify.app/",

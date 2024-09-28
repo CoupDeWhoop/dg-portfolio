@@ -94,6 +94,7 @@ main {
 }
 .intro-text {
   margin: 30px;
+  padding: 10px;
 }
 .project-list {
   width: 100%;
